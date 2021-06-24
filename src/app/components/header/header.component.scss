@@ -1,0 +1,75 @@
+.containerHeader {
+  height: 110px;
+  padding: 0px 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFE0CC;
+  border-bottom: 3px solid #ff7c26;
+
+  .logo {
+    width: 110px;
+  }
+
+  .containerMenu {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .language {
+      margin: 0px 10px;
+      font-weight: bold;
+      font-size: 1.05em;
+    }
+
+    .devider {
+      width: 1px;
+      height: 60px;
+      background-color: #000;
+    }
+
+    .containerProfile {
+      width: 70%;
+      height: 60px;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: all 0.3s;
+
+      .profilePhoto {
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        border-radius: 100%;
+      }
+
+      .profileDescritiveContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        .name {
+          font-weight: bold;
+          font-size: 0.9em;
+        }
+
+        .role {
+          font-size: 0.9em;
+        }
+      }
+    }
+
+    .containerProfile:hover {
+      background-color: rgba(150, 150, 150, 0.1);
+      box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.25);
+    }
+  }
+}
