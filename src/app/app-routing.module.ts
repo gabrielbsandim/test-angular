@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UnitListComponent } from './pages/unit-list/unit-list.component';
+import { BusinessListComponent } from './pages/business-list/business-list.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/unit-list', pathMatch: 'full' },
-  { path: 'unit-list', component: UnitListComponent, }
+  { path: '', redirectTo: '/business-list', pathMatch: 'full' },
+  { path: 'business-list', component: BusinessListComponent, }
 ];
 
 @NgModule({

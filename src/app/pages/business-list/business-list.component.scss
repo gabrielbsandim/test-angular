@@ -1,0 +1,100 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 113px);
+
+  .subheaderContainer {
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .titleContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+
+      h1 {
+        font-weight: bold;
+        margin: 0;
+        font-size: 2em;
+      }
+
+      h3 {
+        font-size: 1.5em;
+      }
+    }
+
+    .searchContainer mat-form-field {
+      width: 300px;
+      font-size: 0.9em;
+    }
+  }
+
+  .containerTable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+
+    div {
+      width: 90%;
+      height: 100%;
+
+      table {
+        width: 100%;
+
+        .mat-column-name,
+        .mat-column-business {
+          width: 32% !important;
+        }
+
+        .mat-column-valuation {
+          width: 22% !important;
+        }
+
+        .mat-column-active,
+        .mat-column-id {
+          width: 7% !important;
+        }
+
+        .alignCenter {
+          text-align: center;
+        }
+
+        td,
+        th {
+          width: 25%;
+        }
+
+        .activeCircle {
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          margin: auto;
+
+          &.true {
+            background-color: #6cf472;
+          }
+
+          &.false {
+            background-color: #FF7573;
+          }
+        }
+
+        td .openBusinessDetail {
+          cursor: pointer;
+          transition: all 0.3s;
+          font-size: 1.55em;
+          color: #777;
+        }
+
+        td .openBusinessDetail:active {
+          transform: translateY(2px);
+        }
+      }
+    }
+  }
+
+}
