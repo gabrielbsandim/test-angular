@@ -27,12 +27,13 @@ export class BusinessListComponent implements OnInit {
       }
 
       this.dataSource = new MatTableDataSource(resFetchBusiness);
+      this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;
     })
   }
 
   ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
+
   }
 
   public onKeyUpSearch(event: any) {

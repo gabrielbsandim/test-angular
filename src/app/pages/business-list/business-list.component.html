@@ -34,14 +34,14 @@
         </ng-container>
 
         <ng-container matColumnDef="active">
-          <th class="alignCenter" mat-header-cell *matHeaderCellDef mat-sort-header> Situação </th>
+          <th class="alignCenter" mat-header-cell *matHeaderCellDef> Situação </th>
           <td class="alignCenter" mat-cell *matCellDef="let row">
             <div class="activeCircle" [class.true]="row.active" [class.false]="!row.active"></div>
           </td>
         </ng-container>
 
         <ng-container matColumnDef="id">
-          <th class="alignCenter" mat-header-cell *matHeaderCellDef mat-sort-header> Ação </th>
+          <th class="alignCenter" mat-header-cell *matHeaderCellDef> Ação </th>
           <td class="alignCenter" mat-cell *matCellDef="let row">
             <mat-icon class="openBusinessDetail" aria-hidden="false" (click)="openBusinessDetail(row.id)">visibility</mat-icon>
           </td>
