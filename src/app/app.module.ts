@@ -18,7 +18,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { PipesModule } from './pipes/pipes.module';
 
 registerLocaleData(localePt, 'pt');
 
@@ -33,7 +32,6 @@ registerLocaleData(localePt, 'pt');
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    PipesModule,
     MatIconModule,
     MatInputModule,
     MatFormFieldModule,
