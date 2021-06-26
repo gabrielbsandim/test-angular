@@ -4,6 +4,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { IBusiness } from 'src/app/models/business.model';
 import { BusinessService } from 'src/app/services/business.service';
+import { FilterBusiness } from 'src/app/utils/filterBusiness.util';
 
 @Component({
   selector: 'app-business-list',
@@ -11,8 +12,11 @@ import { BusinessService } from 'src/app/services/business.service';
   styleUrls: ['./business-list.component.scss']
 })
 export class BusinessListComponent implements OnInit {
-  displayedColumns: string[] = ['name', 'business', 'valuation', 'active', 'id'];
-  dataSource = new MatTableDataSource<IBusiness>();
+  private businessList: IBusiness[] = [];
+  public displayedColumns: string[] = ['name', 'business', 'valuation', 'active', 'id'];
+  public businessListFilteredDataSource = new MatTableDataSource<IBusiness>();
+
+  private filterBusiness = new FilterBusiness()
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
@@ -21,23 +25,26 @@ export class BusinessListComponent implements OnInit {
 
   ngOnInit() {
     this.businessService.fetchAllBusiness().subscribe((resFetchBusiness) => {
-      console.log(resFetchBusiness)
       if (!resFetchBusiness) {
         return console.log('tratar erro')
       }
 
-      this.dataSource = new MatTableDataSource(resFetchBusiness);
-      this.dataSource.paginator = this.paginator;
-      this.dataSource.sort = this.sort;
+      this.businessList = resFetchBusiness;
+      this.businessListFilteredDataSource = new MatTableDataSource(resFetchBusiness);
+
+      this.configurePaginationAndSort();
     })
   }
 
-  ngAfterViewInit() {
-
+  private configurePaginationAndSort() {
+    this.paginator._intl.itemsPerPageLabel = 'Itens por página';
+    this.businessListFilteredDataSource.paginator = this.paginator;
+    this.businessListFilteredDataSource.sort = this.sort;
   }
 
   public onKeyUpSearch(event: any) {
-    console.log(event.target.value)
+    const { value } = event.target
+    this.businessListFilteredDataSource = new MatTableDataSource(this.filterBusiness.filterItems(value, this.businessList));
   }
 
   public openBusinessDetail(businessId: string) {
