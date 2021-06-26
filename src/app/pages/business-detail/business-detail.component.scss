@@ -1,0 +1,69 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 113px);
+
+  .subheaderContainer {
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    h1 {
+      font-weight: bold;
+      margin: 0;
+      font-size: 1.7em;
+    }
+
+    h3 {
+      font-size: 1.25em;
+    }
+  }
+
+  .containerForms {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 80px;
+
+    .containerAddress, .containerBusinessDetails {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      mat-form-field, app-cep {
+        width: 15%;
+        margin: 0 8px;
+      }
+
+      mat-form-field:first-child, app-cep {
+        margin-left: 0 !important;
+      }
+
+      mat-form-field:last-child {
+        margin-right: 0 !important;
+      }
+
+      .containerCompanyName {
+        width: 34%;
+      }
+    }
+
+    .containerButtons {
+      .backButton {
+        background-color: #909090;
+        color: #fff;
+        margin-right: 12px;
+      }
+
+      .saveButton {
+        background-color: #ff7c26;
+        color: #fff;
+        width: 12, 0px;
+      }
+    }
+  }
+}
