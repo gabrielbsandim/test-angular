@@ -1,0 +1,47 @@
+
+.containerDialog {
+  display: flex;
+  height: calc(100% - 20px);
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .headerDialog {
+    font-size: 1.35em;
+    font-weight: bold;
+    color: #ff7c26;
+    width: 100%;
+  }
+
+
+  .containerQuestionIMG {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .questionIMG {
+      width: 180px;
+      margin: auto;
+    }
+  }
+
+  .containerButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    .notButton {
+      background-color: #cccccc;
+      color: #fff;
+    }
+
+    .yesButton {
+      background-color: #00438a;
+      color: #fff;
+    }
+  }
+}
