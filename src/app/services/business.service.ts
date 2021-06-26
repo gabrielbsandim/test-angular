@@ -18,7 +18,10 @@ export class BusinessService {
   constructor(private httpClient: HttpClient) { }
 
   public fetchAllBusiness(): Observable<IBusiness[]> {
-    return this.httpClient.get<IBusiness[]>(environment.fetchBusinessBaseUrl);
+    return this.httpClient.get<IBusiness[]>(environment.fetchBusinessBaseUrl+'oi')
+    .pipe(
+      catchError(this.handleError)
+    );
   }
 
   public fetchOneBusiness(businessId: string): Observable<IBusiness> {
@@ -51,6 +54,6 @@ export class BusinessService {
       `body was: ${error.error}`);
 
     return throwError(
-      'Ocorreu um erro ao buscar o Polo');
+      'Ocorreu um erro na requisição');
   }
 }

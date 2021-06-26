@@ -5,6 +5,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
 import { IBusiness } from 'src/app/models/business.model';
 import { BusinessService } from 'src/app/services/business.service';
+import { UtilsService } from 'src/app/services/utils.service';
 import { FilterBusiness } from 'src/app/utils/filterBusiness.util';
 
 @Component({
@@ -21,7 +22,11 @@ export class BusinessListComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor(private businessService: BusinessService, private router: Router) { }
+  constructor(
+    private businessService: BusinessService,
+    private router: Router,
+    private utilsService: UtilsService
+  ) { }
 
   ngOnInit() {
     this.businessService.fetchAllBusiness().subscribe((resFetchBusiness) => {
@@ -33,7 +38,10 @@ export class BusinessListComponent implements OnInit {
       this.businessListFilteredDataSource = new MatTableDataSource(resFetchBusiness);
 
       this.configurePaginationAndSort();
-    })
+    }, (error) => {
+      // Se erro no get
+      this.utilsService.snackBarError(error);
+    });
   }
 
   private configurePaginationAndSort() {
