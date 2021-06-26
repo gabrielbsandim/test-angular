@@ -1,14 +1,12 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+
 import { environment } from 'src/environments/environment';
 import { IBusiness } from '../models/business.model';
-
-export interface IFakeStoreBusinessResponse {
-  status: boolean
-  message: string
-}
+import { IFakeStoreBusinessResponse } from '../models/fakeActions.model';
 
 @Injectable({
   providedIn: 'root'
@@ -32,6 +30,7 @@ export class BusinessService {
       );
   }
 
+  // salvamento fake do Polo com retorno
   public storeBusiness(business: IBusiness): IFakeStoreBusinessResponse {
     if (!business) {
       return {
@@ -48,6 +47,7 @@ export class BusinessService {
     }
   }
 
+  // resposta de erro para a chamada
   private handleError(error: HttpErrorResponse) {
     console.error(
       `Backend returned code ${error.status}, ` +

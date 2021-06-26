@@ -1,11 +1,13 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { Router } from '@angular/router';
+
 import { IBusiness } from 'src/app/models/business.model';
-import { BusinessService } from 'src/app/services/business.service';
 import { UtilsService } from 'src/app/services/utils.service';
+import { BusinessService } from 'src/app/services/business.service';
 import { FilterBusiness } from 'src/app/utils/filterBusiness.util';
 
 @Component({
@@ -30,10 +32,6 @@ export class BusinessListComponent implements OnInit {
 
   ngOnInit() {
     this.businessService.fetchAllBusiness().subscribe((resFetchBusiness) => {
-      if (!resFetchBusiness) {
-        return console.log('tratar erro')
-      }
-
       this.businessList = resFetchBusiness;
       this.businessListFilteredDataSource = new MatTableDataSource(resFetchBusiness);
 
@@ -50,6 +48,7 @@ export class BusinessListComponent implements OnInit {
     this.businessListFilteredDataSource.sort = this.sort;
   }
 
+  // Filtro dos polos a cada digitação
   public onKeyUpSearch(event: any) {
     const { value } = event.target
     this.businessListFilteredDataSource = new MatTableDataSource(this.filterBusiness.filterItems(value, this.businessList));

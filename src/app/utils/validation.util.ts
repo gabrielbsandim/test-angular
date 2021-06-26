@@ -1,5 +1,5 @@
-/* eslint-disable prefer-regex-literals */
 import { AbstractControl } from '@angular/forms'
+
 import { cnpj } from 'cpf-cnpj-validator'
 
 export class Validation {

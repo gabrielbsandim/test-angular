@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { ActivatedRoute, Router } from '@angular/router';
-import { DialogComponent, IDialogData } from 'src/app/components/dialog/dialog.component';
+
+import { DialogComponent } from 'src/app/components/dialog/dialog.component';
+import { IDialogData } from 'src/app/models/dialog.model';
 import { IBusiness } from 'src/app/models/business.model';
 import { IGetAddressOutput } from 'src/app/models/getAddress.model';
 import { BusinessService } from 'src/app/services/business.service';

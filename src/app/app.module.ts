@@ -13,7 +13,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { BusinessListComponent } from './pages/business-list/business-list.component';
 import { BusinessDetailComponent } from './pages/business-detail/business-detail.component';
 
-
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -25,18 +24,12 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
-import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { NgxMaskModule } from 'ngx-mask';
 import { NgxCurrencyModule } from "ngx-currency";
 import { DialogComponent } from './components/dialog/dialog.component';
 import { CepComponent } from './components/cep/cep.component';
 
 registerLocaleData(localePt, 'pt');
-
-const maskConfig: Partial<IConfig> = {
-  validation: false,
-  decimalMarker: ',',
-  thousandSeparator: '.',
-};
 
 @NgModule({
   declarations: [
@@ -48,7 +41,7 @@ const maskConfig: Partial<IConfig> = {
     CepComponent,
   ],
   imports: [
-    NgxMaskModule.forRoot(maskConfig),
+    NgxMaskModule.forRoot(),
     NgxCurrencyModule,
     BrowserModule,
     AppRoutingModule,

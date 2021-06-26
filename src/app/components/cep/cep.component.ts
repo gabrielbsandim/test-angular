@@ -1,6 +1,8 @@
 import { Component, EventEmitter, Input, Output, SimpleChanges } from '@angular/core';
+
 import { IGetAddressOutput } from 'src/app/models/getAddress.model';
 import { CepService } from 'src/app/services/cep.service';
+import { UtilsService } from 'src/app/services/utils.service';
 import { CreateForms } from 'src/app/utils/createForms.util';
 
 @Component({
@@ -10,12 +12,11 @@ import { CreateForms } from 'src/app/utils/createForms.util';
 })
 export class CepComponent {
   public cepForm = CreateForms.createCEPForm();
-  public invalidZipCode = false;
 
   @Input() zipCode: string = ''
   @Output() returnGetAddress: EventEmitter<IGetAddressOutput | null> = new EventEmitter();
 
-  constructor(private cepService: CepService) { }
+  constructor(private cepService: CepService, private utilsService: UtilsService) { }
 
   // recebe as mudanças do cep após receber os dados do Polo e busca o cep
   ngOnChanges(changes: SimpleChanges) {
@@ -27,11 +28,8 @@ export class CepComponent {
   public getAddress() {
     if (this.cepForm.get('zipCode')!.invalid) {
       this.returnGetAddress.emit(null)
-      this.invalidZipCode = true
       return
     }
-
-    this.invalidZipCode = false
 
     this.cepService
       .getAddress(this.cepForm.value.zipCode)
@@ -39,6 +37,10 @@ export class CepComponent {
   }
 
   private onCheckCep = (response: IGetAddressOutput | null) => {
+    if (!response) {
+      this.utilsService.snackBarError('CEP não existe')
+    }
+
     this.returnGetAddress.emit(response)
   }
 }

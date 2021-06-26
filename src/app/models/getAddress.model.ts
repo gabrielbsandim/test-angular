@@ -12,5 +12,5 @@ export interface IGetAddressOutput {
 }
 
 export interface IViaCepError {
-  error: boolean
+  readonly erro: boolean
 }

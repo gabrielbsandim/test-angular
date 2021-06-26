@@ -1,9 +1,8 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
-export interface IDialogData {
-  header: string
-}
+import { IDialogData } from 'src/app/models/dialog.model';
 
 @Component({
   selector: 'app-dialog',
