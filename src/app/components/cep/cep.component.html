@@ -1,0 +1,5 @@
+<mat-form-field appearance="outline" [formGroup]="cepForm">
+  <mat-label>CEP</mat-label>
+  <input matInput formControlName="zipCode" type="text" (focusout)="getAddress()" mask="99999-999">
+  <mat-error *ngIf="(cepForm.controls.zipCode.errors?.invalidZipCode) || invalidZipCode">CEP inválido</mat-error>
+</mat-form-field>
