@@ -18,7 +18,7 @@ export class BusinessService {
   constructor(private httpClient: HttpClient) { }
 
   public fetchAllBusiness(): Observable<IBusiness[]> {
-    return this.httpClient.get<IBusiness[]>(environment.fetchBusinessBaseUrl+'oi')
+    return this.httpClient.get<IBusiness[]>(environment.fetchBusinessBaseUrl)
     .pipe(
       catchError(this.handleError)
     );
