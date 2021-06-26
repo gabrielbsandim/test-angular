@@ -233,3 +233,13 @@ $altTheme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
     font-family: 'Roboto';
   }
 }
+
+.successPanel {
+  background-color: #002c6d;
+  color: #fff;
+}
+
+.errorPanel {
+  background-color: #eb445a;
+  color: #fff;
+}
