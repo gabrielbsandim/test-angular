@@ -8,8 +8,25 @@
   background-color: #FFE0CC;
   border-bottom: 3px solid #ff7c26;
 
+  @media screen and (max-width: 760px) {
+    padding: 0px 40px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0px 10px;
+  }
+
+
   .logo {
     width: 110px;
+
+    @media screen and (max-width: 760px) {
+      width: 80px;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 60px;
+    }
   }
 
   .containerMenu {
@@ -19,10 +36,18 @@
     align-items: center;
     justify-content: space-between;
 
+    @media screen and (max-width: 480px) {
+      width: 210px;
+    }
+
     .language {
       margin: 0px 10px;
       font-weight: bold;
       font-size: 1.05em;
+
+      @media screen and (max-width: 480px) {
+        font-size: 0.9em;
+      }
     }
 
     .devider {
@@ -43,11 +68,20 @@
       border-radius: 2px;
       transition: all 0.3s;
 
+      @media screen and (max-width: 480px) {
+        padding-right: 0;
+      }
+
       .profilePhoto {
         width: 40px;
         height: 40px;
         background-color: #000;
         border-radius: 100%;
+
+        @media screen and (max-width: 480px) {
+          width: 30px;
+          height: 30px;
+        }
       }
 
       .profileDescritiveContainer {
@@ -59,10 +93,18 @@
         .name {
           font-weight: bold;
           font-size: 0.9em;
+
+          @media screen and (max-width: 480px) {
+            font-size: 0.8em;
+          }
         }
 
         .role {
           font-size: 0.9em;
+
+          @media screen and (max-width: 480px) {
+            font-size: 0.8em;
+          }
         }
       }
     }

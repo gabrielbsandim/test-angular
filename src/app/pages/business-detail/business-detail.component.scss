@@ -9,14 +9,32 @@
     align-items: flex-start;
     justify-content: space-evenly;
 
+    @media screen and (max-width: 760px) {
+      padding: 20px 40px 0;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 10px 10px 0;
+    }
+
     h1 {
+      width: 100%;
       font-weight: bold;
       margin: 0;
       font-size: 1.7em;
+
+      @media screen and (max-width: 760px) {
+        font-size: 1.2em;
+      }
     }
 
     h3 {
+      width: 100%;
       font-size: 1.25em;
+
+      @media screen and (max-width: 760px) {
+        font-size: 1em;
+      }
     }
   }
 
@@ -27,19 +45,40 @@
     justify-content: center;
     padding: 20px 80px;
 
-    .containerAddress, .containerBusinessDetails {
+    @media screen and (max-width: 1020px) {
+      padding: 20px 40px;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 10px;
+    }
+
+    .containerAddress,
+    .containerBusinessDetails {
       width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
 
-      mat-form-field, app-cep {
-        width: 15%;
-        margin: 0 8px;
+      @media screen and (max-width: 760px) {
+        flex-direction: column;
+        justify-content: center;
       }
 
-      mat-form-field:first-child, app-cep {
+      mat-form-field,
+      app-cep {
+        width: 15%;
+        margin: 0 8px;
+
+        @media screen and (max-width: 760px) {
+          width: 100%;
+          margin: 0;
+        }
+      }
+
+      mat-form-field:first-child,
+      app-cep {
         margin-left: 0 !important;
       }
 
@@ -49,6 +88,11 @@
 
       .containerCompanyName {
         width: 34%;
+
+        @media screen and (max-width: 760px) {
+          width: 100%;
+          margin: 0;
+        }
       }
     }
 
@@ -62,7 +106,7 @@
       .saveButton {
         background-color: #ff7c26;
         color: #fff;
-        width: 12, 0px;
+        width: 120px;
       }
     }
   }

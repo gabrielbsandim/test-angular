@@ -52,7 +52,8 @@
 
       <mat-form-field appearance="outline">
         <mat-label>Valuation</mat-label>
-        <input matInput formControlName="valuation" type="text" currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',', align: 'left' }">
+        <input matInput formControlName="valuation" type="text" currencyMask
+          [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',', align: 'left' }">
         <mat-error *ngIf="showErrors && formControls.valuation.errors?.required">Campo obrigatório</mat-error>
       </mat-form-field>
 
@@ -74,8 +75,10 @@
 
     <br>
     <div class="containerButtons">
-      <button [disabled]="isRequesting" mat-raised-button class="backButton" [routerLink]="['/business-list']" type="button">Voltar</button>
-      <button [disabled]="isRequesting" mat-raised-button class="saveButton" (click)="saveValidate()" type="submit">Salvar</button>
+      <button [disabled]="isRequesting" mat-raised-button class="backButton" [routerLink]="['/business-list']"
+        type="button">Voltar</button>
+      <button [disabled]="isRequesting" mat-raised-button class="saveButton" (click)="saveValidate()"
+        type="submit">Salvar</button>
     </div>
   </form>
 </div>
