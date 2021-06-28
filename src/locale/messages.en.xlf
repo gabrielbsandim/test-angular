@@ -12,7 +12,7 @@
       </trans-unit>
       <trans-unit id="4861547197796085014" datatype="html">
         <source>CEP inválido</source>
-        <target>Invalid zipcode</target>
+        <target>Invalid Zipcode</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/cep/cep.component.html</context>
           <context context-type="linenumber">4</context>
@@ -20,7 +20,7 @@
       </trans-unit>
       <trans-unit id="1479140584847264931" datatype="html">
         <source>Não</source>
-    <target>No</target>
+        <target>No</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/dialog/dialog.component.html</context>
           <context context-type="linenumber">7</context>
@@ -28,7 +28,7 @@
       </trans-unit>
       <trans-unit id="6407152308703637761" datatype="html">
         <source>Sim</source>
-    <target>Yes</target>
+        <target>Yes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/dialog/dialog.component.html</context>
           <context context-type="linenumber">8</context>
@@ -36,7 +36,7 @@
       </trans-unit>
       <trans-unit id="3961761778480356771" datatype="html">
         <source>Diretor Itaú BBA</source>
-    <target>Director Itaú BBA</target>
+        <target>Itaú BBA Director</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
           <context context-type="linenumber">11</context>
@@ -44,7 +44,7 @@
       </trans-unit>
       <trans-unit id="5738470251252626068" datatype="html">
         <source>Polo <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;business&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ business.name }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-    <target>Main center <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;business&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ business.name }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <target>Unit <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;business&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ business.name }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">4</context>
@@ -52,7 +52,7 @@
       </trans-unit>
       <trans-unit id="599472928787248086" datatype="html">
         <source>exibindo detalhes do polo <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;business&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ business.name }}"/> #<x id="INTERPOLATION_1" equiv-text="{{ business.id }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <target>showing details of the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;business&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ business.name }}"/>#<x id="INTERPOLATION_1" equiv-text="{{ business.id }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> main center</target>
+        <target>showing details from <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;business&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ business.name }}"/> #<x id="INTERPOLATION_1" equiv-text="{{ business.id }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> unit</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">5</context>
@@ -60,7 +60,7 @@
       </trans-unit>
       <trans-unit id="282270270244999086" datatype="html">
         <source>Detalhes do endereço</source>
-    <target>Address details</target>
+        <target>Address details</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">9</context>
@@ -68,7 +68,7 @@
       </trans-unit>
       <trans-unit id="4756247846156637794" datatype="html">
         <source>Nome da Rua</source>
-    <target>Street name</target>
+        <target>Street name</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">14</context>
@@ -76,7 +76,7 @@
       </trans-unit>
       <trans-unit id="3980580790899754118" datatype="html">
         <source>Campo obrigatório</source>
-    <target>Required field</target>
+        <target>Required field</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">16</context>
@@ -112,7 +112,7 @@
       </trans-unit>
       <trans-unit id="6965714060054082080" datatype="html">
         <source>Bairro</source>
-    <target>District</target>
+        <target>District</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">20</context>
@@ -120,7 +120,7 @@
       </trans-unit>
       <trans-unit id="4963172891871550734" datatype="html">
         <source>Estado</source>
-    <target>State</target>
+        <target>State</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">26</context>
@@ -128,7 +128,7 @@
       </trans-unit>
       <trans-unit id="1368387173409336978" datatype="html">
         <source>Cidade</source>
-    <target>City</target>
+        <target>City</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">32</context>
@@ -136,7 +136,7 @@
       </trans-unit>
       <trans-unit id="5566298272574124912" datatype="html">
         <source>Detalhes da empresa</source>
-    <target>Company details</target>
+        <target>Company details</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">39</context>
@@ -144,7 +144,7 @@
       </trans-unit>
       <trans-unit id="3516203899584205089" datatype="html">
         <source>Nome da empresa</source>
-    <target>Company name</target>
+        <target>Company name</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">42</context>
@@ -152,7 +152,7 @@
       </trans-unit>
       <trans-unit id="5537754140221134513" datatype="html">
         <source>CNPJ inválido</source>
-      <target>Invalid CNPJ</target>
+        <target>Invalid CNPJ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">63</context>
@@ -160,7 +160,7 @@
       </trans-unit>
       <trans-unit id="7758905154557542013" datatype="html">
         <source>Ativo?</source>
-    <target>Active?</target>
+        <target>Active?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">67</context>
@@ -168,7 +168,7 @@
       </trans-unit>
       <trans-unit id="5030787526357917836" datatype="html">
         <source> Sim </source>
-    <target> Yes </target>
+        <target> Yes </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">69</context>
@@ -176,7 +176,7 @@
       </trans-unit>
       <trans-unit id="8269227428906520414" datatype="html">
         <source> Não </source>
-    <target> No </target>
+        <target> No </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">70</context>
@@ -184,7 +184,7 @@
       </trans-unit>
       <trans-unit id="7776503170699723002" datatype="html">
         <source>Voltar</source>
-    <target>Back</target>
+        <target>Back</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">79</context>
@@ -192,15 +192,47 @@
       </trans-unit>
       <trans-unit id="5954338936032655558" datatype="html">
         <source>Salvar</source>
-    <target>Save</target>
+        <target>Save</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
           <context context-type="linenumber">81</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="1954919771984366845" datatype="html">
+        <source>Nenhum Polo selecionado</source>
+        <target>No unit selected</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5386694638554241765" datatype="html">
+        <source>Ocorreu um erro ao buscar o Polo</source>
+        <target>Error on search unit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4479590203647802043" datatype="html">
+        <source>Ocorreu um erro ao salvar o Polo</source>
+        <target>Error on save unit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2028403860832617789" datatype="html">
+        <source>Deseja realmente salvar o Polo <x id="PH" equiv-text="this.business.name || &apos;&apos;"/>?</source>
+        <target>Do you confirm to save <x id="PH" equiv-text="this.business.name || &apos;&apos;"/> unit?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.ts</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="1238195764399588453" datatype="html">
         <source>Polos Itaú</source>
-    <target>Main centers Itaú</target>
+        <target>Itaú units</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-list/business-list.component.html</context>
           <context context-type="linenumber">5</context>
@@ -208,7 +240,7 @@
       </trans-unit>
       <trans-unit id="275534015079672341" datatype="html">
         <source>confira abaixo alguns dos principais polos do Itaú</source>
-    <target>check below some of the main centers of Itaú</target>
+        <target>check below the main Itaú units</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-list/business-list.component.html</context>
           <context context-type="linenumber">6</context>
@@ -216,7 +248,7 @@
       </trans-unit>
       <trans-unit id="4057867539656351015" datatype="html">
         <source>Pesquisar...</source>
-    <target>Search...</target>
+        <target>Search ...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-list/business-list.component.html</context>
           <context context-type="linenumber">11</context>
@@ -224,7 +256,7 @@
       </trans-unit>
       <trans-unit id="845041155954588585" datatype="html">
         <source> Nome </source>
-    <target> Name </target>
+        <target> Name </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-list/business-list.component.html</context>
           <context context-type="linenumber">22</context>
@@ -232,7 +264,7 @@
       </trans-unit>
       <trans-unit id="5171162705140000152" datatype="html">
         <source> Situação </source>
-    <target> Situation </target>
+        <target> Situation </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-list/business-list.component.html</context>
           <context context-type="linenumber">37</context>
@@ -240,7 +272,7 @@
       </trans-unit>
       <trans-unit id="4369958950281790067" datatype="html">
         <source> Ação </source>
-    <target> Action </target>
+        <target> Action </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-list/business-list.component.html</context>
           <context context-type="linenumber">44</context>
@@ -248,10 +280,58 @@
       </trans-unit>
       <trans-unit id="2729787407882641755" datatype="html">
         <source>Sem dados para mostrar</source>
-    <target>No data to show</target>
+        <target>No data</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-list/business-list.component.html</context>
           <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2841270931469605124" datatype="html">
+        <source>Itens por página</source>
+        <target>Items per page</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-list/business-list.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1029874722479071623" datatype="html">
+        <source>Erro ao salvar o Polo</source>
+        <target>Error on save unit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/business.service.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8369813273010688701" datatype="html">
+        <source>Polo salvo!</source>
+        <target>Unit Saved!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/business.service.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2752344900694192891" datatype="html">
+        <source>Polo salvo com sucesso</source>
+        <target>Unit save successfully</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/business.service.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1011265840896755633" datatype="html">
+        <source>Backend retornou o código: <x id="PH" equiv-text="error.status"/>, e no corpo: <x id="PH_1" equiv-text="error.error"/></source>
+        <target>Backend return code: <x id="PH" equiv-text="error.status"/>, and body: <x id="PH_1" equiv-text="error.error"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/business.service.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7125608401886165151" datatype="html">
+        <source>Ocorreu um erro na requisição</source>
+        <target>Error on request</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/business.service.ts</context>
+          <context context-type="linenumber">56</context>
         </context-group>
       </trans-unit>
     </body>

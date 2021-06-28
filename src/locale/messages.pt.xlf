@@ -177,6 +177,34 @@
           <context context-type="linenumber">81</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="1954919771984366845" datatype="html">
+        <source>Nenhum Polo selecionado</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5386694638554241765" datatype="html">
+        <source>Ocorreu um erro ao buscar o Polo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4479590203647802043" datatype="html">
+        <source>Ocorreu um erro ao salvar o Polo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2028403860832617789" datatype="html">
+        <source>Deseja realmente salvar o Polo <x id="PH" equiv-text="this.business.name || &apos;&apos;"/>?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.ts</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="1238195764399588453" datatype="html">
         <source>Polos Itaú</source>
         <context-group purpose="location">
@@ -224,6 +252,48 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/business-list/business-list.component.html</context>
           <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2841270931469605124" datatype="html">
+        <source>Itens por página</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-list/business-list.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1029874722479071623" datatype="html">
+        <source>Erro ao salvar o Polo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/business.service.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8369813273010688701" datatype="html">
+        <source>Polo salvo!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/business.service.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2752344900694192891" datatype="html">
+        <source>Polo salvo com sucesso</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/business.service.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1011265840896755633" datatype="html">
+        <source>Backend retornou o código: <x id="PH" equiv-text="error.status"/>, e no corpo: <x id="PH_1" equiv-text="error.error"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/business.service.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7125608401886165151" datatype="html">
+        <source>Ocorreu um erro na requisição</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/business.service.ts</context>
+          <context context-type="linenumber">56</context>
         </context-group>
       </trans-unit>
     </body>
