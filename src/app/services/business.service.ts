@@ -35,25 +35,24 @@ export class BusinessService {
     if (!business) {
       return {
         status: false,
-        message: 'Erro ao salvar o Polo'
+        message: $localize`Erro ao salvar o Polo`
       }
     }
 
-    console.log('Polo salvo!');
+    console.log($localize`Polo salvo!`);
     console.log(business);
     return {
       status: true,
-      message: 'Polo salvo com sucesso!'
+      message: $localize`Polo salvo com sucesso`
     }
   }
 
   // resposta de erro para a chamada
   private handleError(error: HttpErrorResponse) {
     console.error(
-      `Backend returned code ${error.status}, ` +
-      `body was: ${error.error}`);
+      $localize`Backend retornou o código: ${error.status}, e no corpo: ${error.error}`);
 
     return throwError(
-      'Ocorreu um erro na requisição');
+      $localize`Ocorreu um erro na requisição`);
   }
 }

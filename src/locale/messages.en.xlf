@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="pt-BR" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="3216115424885524622" datatype="html">
+        <source>CEP</source>
+        <target>Zipcode</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cep/cep.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4861547197796085014" datatype="html">
+        <source>CEP inválido</source>
+        <target>Invalid zipcode</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cep/cep.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1479140584847264931" datatype="html">
+        <source>Não</source>
+    <target>No</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialog/dialog.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6407152308703637761" datatype="html">
+        <source>Sim</source>
+    <target>Yes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dialog/dialog.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3961761778480356771" datatype="html">
+        <source>Diretor Itaú BBA</source>
+    <target>Director Itaú BBA</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5738470251252626068" datatype="html">
+        <source>Polo <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;business&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ business.name }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+    <target>Main center <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;business&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ business.name }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="599472928787248086" datatype="html">
+        <source>exibindo detalhes do polo <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;business&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ business.name }}"/> #<x id="INTERPOLATION_1" equiv-text="{{ business.id }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>showing details of the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;business&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ business.name }}"/>#<x id="INTERPOLATION_1" equiv-text="{{ business.id }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> main center</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="282270270244999086" datatype="html">
+        <source>Detalhes do endereço</source>
+    <target>Address details</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4756247846156637794" datatype="html">
+        <source>Nome da Rua</source>
+    <target>Street name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3980580790899754118" datatype="html">
+        <source>Campo obrigatório</source>
+    <target>Required field</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6965714060054082080" datatype="html">
+        <source>Bairro</source>
+    <target>District</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4963172891871550734" datatype="html">
+        <source>Estado</source>
+    <target>State</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1368387173409336978" datatype="html">
+        <source>Cidade</source>
+    <target>City</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5566298272574124912" datatype="html">
+        <source>Detalhes da empresa</source>
+    <target>Company details</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3516203899584205089" datatype="html">
+        <source>Nome da empresa</source>
+    <target>Company name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5537754140221134513" datatype="html">
+        <source>CNPJ inválido</source>
+      <target>Invalid CNPJ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7758905154557542013" datatype="html">
+        <source>Ativo?</source>
+    <target>Active?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5030787526357917836" datatype="html">
+        <source> Sim </source>
+    <target> Yes </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8269227428906520414" datatype="html">
+        <source> Não </source>
+    <target> No </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7776503170699723002" datatype="html">
+        <source>Voltar</source>
+    <target>Back</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5954338936032655558" datatype="html">
+        <source>Salvar</source>
+    <target>Save</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-detail/business-detail.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1238195764399588453" datatype="html">
+        <source>Polos Itaú</source>
+    <target>Main centers Itaú</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-list/business-list.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="275534015079672341" datatype="html">
+        <source>confira abaixo alguns dos principais polos do Itaú</source>
+    <target>check below some of the main centers of Itaú</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-list/business-list.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4057867539656351015" datatype="html">
+        <source>Pesquisar...</source>
+    <target>Search...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-list/business-list.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="845041155954588585" datatype="html">
+        <source> Nome </source>
+    <target> Name </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-list/business-list.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5171162705140000152" datatype="html">
+        <source> Situação </source>
+    <target> Situation </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-list/business-list.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4369958950281790067" datatype="html">
+        <source> Ação </source>
+    <target> Action </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-list/business-list.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2729787407882641755" datatype="html">
+        <source>Sem dados para mostrar</source>
+    <target>No data to show</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/business-list/business-list.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

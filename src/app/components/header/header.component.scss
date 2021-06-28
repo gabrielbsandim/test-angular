@@ -44,10 +44,20 @@
       margin: 0px 10px;
       font-weight: bold;
       font-size: 1.05em;
+      cursor: pointer;
+      transition: all 0.3s;
 
       @media screen and (max-width: 480px) {
         font-size: 0.9em;
       }
+    }
+
+    .language:hover {
+      background-color: rgba(150, 150, 150, 0.25);
+    }
+
+    .language:active {
+      transform: translateY(2px);
     }
 
     .devider {

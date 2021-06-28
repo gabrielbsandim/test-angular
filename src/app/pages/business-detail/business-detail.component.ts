@@ -9,7 +9,7 @@ import { IDialogData } from 'src/app/models/dialog.model';
 import { IBusiness } from 'src/app/models/business.model';
 import { IGetAddressOutput } from 'src/app/models/getAddress.model';
 import { BusinessService } from 'src/app/services/business.service';
-import { UtilsService } from 'src/app/services/utils.service';
+import { ICurrencyMaskOptions, UtilsService } from 'src/app/services/utils.service';
 import { CreateForms } from 'src/app/utils/createForms.util';
 
 @Component({
@@ -28,6 +28,8 @@ export class BusinessDetailComponent implements OnInit {
 
   public business: null | IBusiness = null
 
+  public currencyMaskConfiguration: null | ICurrencyMaskOptions = null
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private businessService: BusinessService,
@@ -35,7 +37,9 @@ export class BusinessDetailComponent implements OnInit {
     private dialog: MatDialog,
     private router: Router,
     private snackBar: MatSnackBar
-  ) { }
+  ) {
+    this.currencyMaskConfiguration = this.utilsService.getCurrencyMaskOptions()
+  }
 
   ngOnInit() {
     const businessId = this.activatedRoute.snapshot.paramMap.get('businessId');
@@ -43,14 +47,14 @@ export class BusinessDetailComponent implements OnInit {
     // Caso não passe o Id na URL
     if (!businessId) {
       this.router.navigateByUrl('/business-list');
-      this.utilsService.snackBarError('Nenhum Polo selecionado');
+      this.utilsService.snackBarError($localize`Nenhum Polo selecionado`);
       return
     }
 
     this.businessService.fetchOneBusiness(businessId).subscribe((business) => {
       if (!business) {
         this.router.navigateByUrl('/business-list');
-        this.utilsService.snackBarError('Ocorreu um erro ao buscar o Polo');
+        this.utilsService.snackBarError($localize`Ocorreu um erro ao buscar o Polo`);
         return
       }
 
@@ -94,7 +98,7 @@ export class BusinessDetailComponent implements OnInit {
     this.isRequesting = true
 
     if (!this.business) {
-      this.snackBar.open('Ocorreu um erro ao salvar o Polo', undefined, {
+      this.snackBar.open($localize`Ocorreu um erro ao salvar o Polo`, undefined, {
         duration: 4000,
         panelClass: 'errorPanel',
       });
@@ -103,7 +107,7 @@ export class BusinessDetailComponent implements OnInit {
 
     try {
       const dialogData: IDialogData = {
-        header: `Deseja realmente salvar o Polo ${this.business.name || ''}?`
+        header: $localize`Deseja realmente salvar o Polo ${this.business.name || ''}?`
       }
 
       const dialogRef = this.dialog.open(DialogComponent, {

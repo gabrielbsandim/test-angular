@@ -28,8 +28,8 @@ import { NgxMaskModule } from 'ngx-mask';
 import { NgxCurrencyModule } from "ngx-currency";
 import { DialogComponent } from './components/dialog/dialog.component';
 import { CepComponent } from './components/cep/cep.component';
+import { PipesModule } from './pipes/pipes.module';
 
-registerLocaleData(localePt, 'pt');
 
 @NgModule({
   declarations: [
@@ -48,6 +48,7 @@ registerLocaleData(localePt, 'pt');
     BrowserAnimationsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    PipesModule,
     MatIconModule,
     MatInputModule,
     MatFormFieldModule,
@@ -59,7 +60,8 @@ registerLocaleData(localePt, 'pt');
     MatDialogModule,
     MatSnackBarModule
   ],
-  providers: [{ provide: LOCALE_ID, useValue: 'pt-BR' }],
+  providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

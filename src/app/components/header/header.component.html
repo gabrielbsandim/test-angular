@@ -2,13 +2,13 @@
   <img class="logo" src="assets/images/logo.png">
 
   <div class="containerMenu">
-    <span class="language">PT</span>
+    <span class="language" (click)="changeLanguage()">{{ language }}</span>
     <div class="devider"></div>
     <div class="containerProfile">
       <div class="profilePhoto"></div>
       <div class="profileDescritiveContainer">
         <span class="name">John Doe</span>
-        <span class="role">Diretor Itaú BBA</span>
+        <span class="role" i18n>Diretor Itaú BBA</span>
       </div>
       <mat-icon aria-hidden="false">keyboard_arrow_down</mat-icon>
     </div>

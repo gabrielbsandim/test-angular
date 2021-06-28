@@ -1,84 +1,84 @@
 <app-header></app-header>
 <div class="container">
   <div class="subheaderContainer">
-    <h1>Polo <span *ngIf="business">{{ business.name }}</span></h1>
-    <h3>exibindo detalhes do polo <span *ngIf="business">{{ business.name }} #{{ business.id }}</span></h3>
+    <h1 i18n>Polo <span *ngIf="business">{{ business.name }}</span></h1>
+    <h3 i18n>exibindo detalhes do polo <span *ngIf="business">{{ business.name }} #{{ business.id }}</span></h3>
   </div>
 
   <form class="containerForms" [formGroup]="businessForm">
-    <p>Detalhes do endereço</p>
+    <p i18n>Detalhes do endereço</p>
     <div class="containerAddress">
       <app-cep [zipCode]="zipCode" (returnGetAddress)="returnGetAddress($event)"></app-cep>
 
       <mat-form-field appearance="outline" class="containerCompanyName">
-        <mat-label>Nome da Rua</mat-label>
+        <mat-label i18n>Nome da Rua</mat-label>
         <input matInput formControlName="street" type="text">
-        <mat-error *ngIf="showErrors && formControls.street.errors?.required">Campo obrigatório</mat-error>
+        <mat-error *ngIf="showErrors && formControls.street.errors?.required" i18n>Campo obrigatório</mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="outline">
-        <mat-label>Bairro</mat-label>
+        <mat-label i18n>Bairro</mat-label>
         <input matInput formControlName="district" type="text">
-        <mat-error *ngIf="showErrors && formControls.district.errors?.required">Campo obrigatório</mat-error>
+        <mat-error *ngIf="showErrors && formControls.district.errors?.required" i18n>Campo obrigatório</mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="outline">
-        <mat-label>Estado</mat-label>
+        <mat-label i18n>Estado</mat-label>
         <input matInput formControlName="state" type="text">
-        <mat-error *ngIf="showErrors && formControls.state.errors?.required">Campo obrigatório</mat-error>
+        <mat-error *ngIf="showErrors && formControls.state.errors?.required" i18n>Campo obrigatório</mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="outline">
-        <mat-label>Cidade</mat-label>
+        <mat-label i18n>Cidade</mat-label>
         <input matInput formControlName="city" type="text">
-        <mat-error *ngIf="showErrors && formControls.city.errors?.required">Campo obrigatório</mat-error>
+        <mat-error *ngIf="showErrors && formControls.city.errors?.required" i18n>Campo obrigatório</mat-error>
       </mat-form-field>
     </div>
 
     <br>
-    <p>Detalhes da empresa</p>
+    <p i18n>Detalhes da empresa</p>
     <div class="containerBusinessDetails">
       <mat-form-field appearance="outline">
-        <mat-label>Nome da empresa</mat-label>
+        <mat-label i18n>Nome da empresa</mat-label>
         <input matInput formControlName="companyName" type="text">
-        <mat-error *ngIf="showErrors && formControls.companyName.errors?.required">Campo obrigatório</mat-error>
+        <mat-error *ngIf="showErrors && formControls.companyName.errors?.required" i18n>Campo obrigatório</mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="outline">
         <mat-label>Business</mat-label>
         <input matInput formControlName="business" type="text">
-        <mat-error *ngIf="showErrors && formControls.business.errors?.required">Campo obrigatório</mat-error>
+        <mat-error *ngIf="showErrors && formControls.business.errors?.required" i18n>Campo obrigatório</mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="outline">
         <mat-label>Valuation</mat-label>
         <input matInput formControlName="valuation" type="text" currencyMask
           [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',', align: 'left' }">
-        <mat-error *ngIf="showErrors && formControls.valuation.errors?.required">Campo obrigatório</mat-error>
+        <mat-error *ngIf="showErrors && formControls.valuation.errors?.required" i18n>Campo obrigatório</mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="outline">
         <mat-label>CNPJ</mat-label>
         <input matInput formControlName="cnpj" type="text" mask="00.000.000/0000-00">
-        <mat-error *ngIf="showErrors && formControls.cnpj.errors?.invalidCNPJ">CNPJ inválido</mat-error>
+        <mat-error *ngIf="showErrors && formControls.cnpj.errors?.invalidCNPJ" i18n>CNPJ inválido</mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="outline">
-        <mat-label>Ativo?</mat-label>
+        <mat-label i18n>Ativo?</mat-label>
         <mat-select formControlName="active">
-          <mat-option [value]="true"> Sim </mat-option>
-          <mat-option [value]="false"> Não </mat-option>
+          <mat-option [value]="true" i18n> Sim </mat-option>
+          <mat-option [value]="false" i18n> Não </mat-option>
         </mat-select>
-        <mat-error *ngIf="showErrors && formControls.active.errors?.required">Campo obrigatório</mat-error>
+        <mat-error *ngIf="showErrors && formControls.active.errors?.required" i18n>Campo obrigatório</mat-error>
       </mat-form-field>
     </div>
 
     <br>
     <div class="containerButtons">
       <button [disabled]="isRequesting" mat-raised-button class="backButton" [routerLink]="['/business-list']"
-        type="button">Voltar</button>
+        type="button" i18n>Voltar</button>
       <button [disabled]="isRequesting" mat-raised-button class="saveButton" (click)="saveValidate()"
-        type="submit">Salvar</button>
+        type="submit" i18n>Salvar</button>
     </div>
   </form>
 </div>

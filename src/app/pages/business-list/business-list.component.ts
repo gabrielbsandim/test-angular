@@ -43,7 +43,7 @@ export class BusinessListComponent implements OnInit {
   }
 
   private configurePaginationAndSort() {
-    this.paginator._intl.itemsPerPageLabel = 'Itens por página';
+    this.paginator._intl.itemsPerPageLabel = $localize`Itens por página`;
     this.businessListFilteredDataSource.paginator = this.paginator;
     this.businessListFilteredDataSource.sort = this.sort;
   }

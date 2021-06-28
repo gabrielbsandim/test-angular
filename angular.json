@@ -20,6 +20,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": true,
+            "aot": true,
             "outputPath": "dist/test-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -64,6 +66,16 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "en": {
+              "localize": ["en"],
+              "outputPath": "dist/under-construction-en/",
+              "i18nMissingTranslation": "error"
+            },
+            "pt": {
+              "localize": ["pt"],
+              "outputPath": "dist/under-construction-pt/",
+              "i18nMissingTranslation": "error"
             }
           },
           "defaultConfiguration": "production"
@@ -76,6 +88,12 @@
             },
             "development": {
               "browserTarget": "test-angular:build:development"
+            },
+            "en": {
+              "browserTarget": "test-angular:build:en"
+            },
+            "pt": {
+              "browserTarget": "test-angular:build:pt"
             }
           },
           "defaultConfiguration": "development"
@@ -102,6 +120,17 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        }
+      },
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "en": {
+            "translation": "src/locale/messages.en.xlf"
+          },
+          "pt": {
+            "translation": "src/locale/messages.pt.xlf"
           }
         }
       }
