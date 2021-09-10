@@ -50,7 +50,6 @@ export class UtilsService {
   }
 
   public getCurrencyLocaleOptions(): ICurrencyLocalePipeOptions {
-    console.log(this.localeId)
     return {
       locale: this.localeId === 'pt' ? 'pt-BR' : 'en-US',
       currency: this.localeId === 'pt' ? 'BRL' : 'USD',
